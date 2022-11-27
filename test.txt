@@ -1,0 +1,16 @@
+const getData = () => {
+    fetch(`https://api.artic.edu/api/v1/artworks`)
+        .then ((response) => {
+            if (response.ok) {
+                return response.json();
+            } else {
+                throw new Error ('Error')
+            }
+        })
+        .then(data => {
+            console.log(data);
+            displayArt(data)
+        })
+        .catch((error) => console.error('Fetch error:', error))  
+    
+}

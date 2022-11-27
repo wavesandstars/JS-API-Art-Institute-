@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art API</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+
+    <div class="welcomecats">
+        <div class = "collection"> 
+            <h1> A Collection of Great Cat Based Artwork</h1> </div>
+        <div class = "special">
+            <p> A special thanks to the Art Institute of Chicago for sharing this data <br> Click on an image for artwork info</p>
+        </div>
+    </div>
+    <!--Start of Container For Art Work -->
+    <div class="container">
+       
+        <div class="gallery"> 
+            <figure class="gallery__item gallery__item--1" id="fig1" onclick="event.stopPropagation(); getArtInfo(this.id, event)" >
+                <img class="gallery__img" src="images/1925.1740 - Courtesan Playing with a Cat.jpg" alt="158921">
+            </figure>
+
+            <figure class="gallery__item gallery__item--2" id="fig2" onclick="event.stopPropagation(); getArtInfo(this.id, event)">
+                <img class="gallery__img" src="images/1925.2172 - Cat Pawing at Goldfish.jpg" alt="21177">
+            </figure>
+            <figure class="gallery__item gallery__item--3" id="fig3" onclick="event.stopPropagation(); getArtInfo(this.id, event)" >
+                <img class="gallery__img" src="images/1923.994 - The Large Cat.jpg" alt="9372">
+            </figure>
+            <figure class="gallery__item gallery__item--4" id="fig4" onclick="event.stopPropagation(); getArtInfo(this.id, event)" >
+                <img class="gallery__img" src="images/1927.6372 - Summer_ Cat on a Balustrade.jpg" alt="51724">
+            </figure>
+
+            
+        </div>
+        
+    </div>
+    <footer>
+       
+        <div> &#169 Art Institute of Chicago</div>
+            
+
+    </footer>
+    
+</body>
+</html>
